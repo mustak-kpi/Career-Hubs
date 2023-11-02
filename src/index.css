@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-titles{
+    @apply hover:text-indigo-500
+  }
+  
+  .btn-titles{
+    @apply bg-indigo-500 px-4 py-4 text-white text-xl font-extrabold not-italic font-mono rounded-lg justify-center
+  }
+
+  .titles{
+    @apply text-center text-5xl font-serif font-extrabold leading-normal not-italic mb-4
+  }
+  .my-documents{
+    @apply text-center text-base font-medium  font-serif
+  }
+
+  .buttlon-style{
+    @apply px-8 py-2 border-2 border-indigo-400 rounded text-xl font-extrabold not-italic justify-center text-indigo-500
+  }
+
+  .jobs-title{
+   @apply text-xl text-white font-bold not-italic leading-normal
+  }
+
+  .linkStyle{
+    @apply text-sm font-normal not-italic
+  }
+
+  .comenaction{
+    @apply text-xl font-semibold not-italic mb-4
+  }
+
+  .jobs-titles{
+    @apply text-white grid justify-center
+  }

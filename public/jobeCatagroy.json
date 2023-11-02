@@ -1,0 +1,29 @@
+[
+    {
+        "id": "01",
+        "avilablejob": 300,
+        "jobcategoryicon": "../src/assets/images/icones/accounts 1.png",
+        "categorytitle": "Account & Finance"
+      },
+      {
+
+        "id": "02",
+        "avilablejob": 200,
+        "jobcategoryicon":"../src/assets/images/icones/business 1.png",
+        "categorytitle": "Creative Design"
+      },
+      {
+
+        "id": "03",
+        "avilablejob": 550,
+        "jobcategoryicon": "../src/assets/images/icones/chip 1.png",
+        "categorytitle": "Marketing & Sales"
+      },
+      {
+
+        "id": "04",
+        "avilablejob": 224,
+        "jobcategoryicon": "../src/assets/images/icones/social-media 1.png",
+        "categorytitle": "Engineering Job"
+      }
+]
