@@ -1,39 +1,39 @@
-import { json } from "react-router-dom";
+import { json } from "react-router-dom"
 
-const addtodata = (id) =>{
-    let applaynow = {}
+const addtodb = (id) =>{
+    let shoppingCart = {};
 
-    // get localstroges 
-    const getlocatstorg = localStorage.getItem('applay-now');
+    // get localStorage itmes
      
-    if(getlocatstorg){
-        applaynow = JSON.parse(getlocatstorg) 
+    const stroedCart = localStorage.getItem('shopping-cart');
+    if(stroedCart){
+      shoppingCart = JSON.parse(stroedCart);
     }
-
-    const quantity = applaynow[id]
+  
+    // add quantity
+    const quantity = shoppingCart[id];
     if(quantity){
-        const newquantity = quantity + 1;
-        applaynow[id] = newquantity;
-    } 
-    else{
-        applaynow[id] = 1;
+      const newQuantity = quantity + 1;
+      shoppingCart[id]= newQuantity;
     }
-
-
-    localStorage.setItem('applay-now', JSON.stringify(applaynow))
+    else{
+      shoppingCart[id] = 1;
+    }
+    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart))
 }
 
-const getlocationstroge = () =>{
-    let applaynow  = {};
-    const getlocatstorg = localStorage.getItem('applay-now');
-    if(getlocatstorg){
-      applaynow = JSON.parse(stroedCart);
-    }
-    return applaynow
-  }
-  
+const getlocastorage = () =>{
+      let shoppingCart = {};
+
+    //   get localStorage itmes 
+    const stroedCart = localStorage.getItem('shopping-cart');
+    if(stroedCart){
+        shoppingCart = JSON.parse(stroedCart)
+    } 
+    return shoppingCart;
+}
 
 export {
-    addtodata,
-    getlocationstroge,
+    addtodb,
+    getlocastorage,
 }

@@ -8,6 +8,8 @@ import Chart from './components/Chart/Chart.jsx'
 import ApplyNow from './components/ApplyNow.jsx'
 import JobeDetiles from './components/JobeDetiles.jsx'
 import ApplayAll from './components/ApplayAll.jsx'
+import { productsloderdata } from './layout/getdata.js'
+
 
 
 
@@ -33,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: '/applayall',  
         element: <ApplayAll></ApplayAll>,
-       
+        loader: productsloderdata
       },
       {
         path: '/jobedetiles/:id',

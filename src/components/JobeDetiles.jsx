@@ -9,7 +9,8 @@ import {
   faDollarSign,
   faChevronCircleLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import { addtodata } from "./utlites.js/facedb";
+import { addtodb } from "./utlites.js/facedb";
+
 
 
 const JobeDetiles = () => {
@@ -34,7 +35,7 @@ const JobeDetiles = () => {
   };
 
   const Applaynow = (id) =>{
-  addtodata(id)
+addtodb(id)
 
   }
   return (

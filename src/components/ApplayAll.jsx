@@ -1,11 +1,22 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import AppliedJobs from './AppliedJobs';
 
 const ApplayAll = () => {
    
+    const {cart} = useLoaderData()
 
     return (
         <div className='container mx-auto'>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae eaque quaerat excepturi eum necessitatibus dolorum corrupti voluptas quibusdam doloremque harum, velit temporibus accusamus ullam expedita rerum nam officiis? Sint.</h1>
+            <h1 className="text-center text-4xl font-extrabold font-serif -mt-16">applied jobs</h1>
+            <div className=''>
+                {
+                    cart.map(jobsdetiles => <AppliedJobs
+                    key={jobsdetiles.id}
+                    jobsdetiles={jobsdetiles}
+                    ></AppliedJobs>)
+                }
+            </div>
         </div>
     );
 };
