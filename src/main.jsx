@@ -9,6 +9,7 @@ import ApplyNow from './components/ApplyNow.jsx'
 import JobeDetiles from './components/JobeDetiles.jsx'
 import ApplayAll from './components/ApplayAll.jsx'
 import { productsloderdata } from './layout/getdata.js'
+import ErroPage from './components/ErroPage.jsx'
 
 
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App></App>,
+    errorElement: <ErroPage></ErroPage>,
     children:[
       {
         path: '/',
